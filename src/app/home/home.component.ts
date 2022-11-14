@@ -29,6 +29,11 @@ export class HomeComponent implements OnInit {
     funcAffMap(){
       this.affMap=true
     }
+     // "ng": "ng",
+    // "start": "ng serve",
+    // "build": "ng build",
+    // "watch": "ng build --watch --configuration development",
+    // "test": "ng test"
  
  
 }
