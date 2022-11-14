@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from "@angular/common/http";
 import { LundingPageComponent } from './lunding-page/lunding-page.component';
-import { AgmCoreModule } from '@agm/core';
+//import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { AgmCoreModule } from '@agm/core';
     ReactiveFormsModule,
     HttpClientModule,
     
-    AgmCoreModule.forRoot({apiKey:''})
+    //AgmCoreModule.forRoot({apiKey:''})
     //AIzaSyA2Ti8hnmbGk3pb99BeekR3dch5hWFfrQA
   ],
   providers: [],
