@@ -1,6 +1,8 @@
-agm-map {
-    height: 300px;
-    width: 100%;
-    background-size: cover;
-    background-attachment: fixed ;
-  }
+.video_div{
+  margin-left: -210px;
+}
+@media (max-width:1199px){
+  .video_div{
+    margin-left: -270px;
+  } 
+}

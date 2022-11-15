@@ -19,6 +19,8 @@ public zoom: number = 9;
 public lat: number = 35.7884241;
 public lng: number = -83.5543329;
 public googleMapType = 'satellite';
+public phone = "00971 58 218 9263"
+public title = "IhebFront2";
 
 images = [
   {path: 'https://source.unsplash.com/800x600/?nature'},
@@ -31,7 +33,7 @@ images = [
  
     name: new FormControl('',[Validators.required ]),
    
-    lastName: new FormControl('',[Validators.required ]),
+    lastName: new FormControl(''),
     phone: new FormControl('',Validators.required),
     email: new FormControl('',[Validators.required,Validators.email]),
     typRef:new FormControl(""),
@@ -54,7 +56,7 @@ images = [
     budj=false
     affForm=false
     affDat=false
-    title = 'IhebFront2';
+    
     typRef='صالة وغرفة'
     typM='كاش' 
     typB="AED 1000000 -> AED 2000000"

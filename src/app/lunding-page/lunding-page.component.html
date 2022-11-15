@@ -4,7 +4,7 @@
    <main class="main" id="top">
     <section   style=" background: url('assets/img/IMG-20221107-WA0015.jpg') center center;
     background-size: cover;background-attachment: fixed ;margin-bottom: 0px;">
-      <div class="container"  style="z-index:100" style="opacity: 0.7;">
+      <div class="container"   style="z-index:100;margin-bottom: 20px;" style="opacity: 0.7;">
         <div class="row mt-5 justify-content-center" data-aos="fade-up">
           <div class="col-lg-12">
            
@@ -16,25 +16,19 @@
                         <div class="row justify-content-center">
                           <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
             
-                            <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">معانا شقتك بين يديك</p>
+                            <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">شقتك فاخرة بين يديك</p>
             
                             <form class="mx-1 mx-md-4" [formGroup]="user">
                               <div *ngIf="!affichEtape2">
                                 <div class="d-flex flex-row align-items-center mb-4" >
                                   <i class="fas fa-user fa-lg me-3 fa-fw" style="color:  #C9A770;"></i>
                                   <div class="form-outline flex-fill mb-0">
-                                    <input type="text" id="form3Example1c" class="form-control" placeholder="الاسم"  formControlName='name' />
+                                    <input type="text" id="form3Example1c" class="form-control" placeholder="الاسم و اللقب"  formControlName='name' />
                                     <label class="form-label" *ngIf="user.controls.name.hasError('required') && this.user.controls.name.touched" style="color: red;" for="form3Example1c">الاسم اجباري</label>
                                   </div>
                                 </div>
               
-                                <div class="d-flex flex-row align-items-center mb-4">
-                                  <i class="fas fa-user  fa-lg me-3 fa-fw" style="color:  #C9A770;"></i>
-                                  <div class="form-outline flex-fill mb-0">
-                                    <input type="email" id="form3Example3c" class="form-control" placeholder="اللقب"  formControlName='lastName' />
-                                     <label class="form-label" *ngIf="user.controls.lastName.hasError('required') && this.user.controls.lastName.touched" style="color: red;" for="form3Example1c">اللقب اجباري</label>
-                                  </div>
-                                </div>
+                              
               
                                 <div class="d-flex flex-row align-items-center mb-4">
                                   <i class="fas fa-envelope fa-lg me-3 fa-fw" style="color:  #C9A770;"></i>
@@ -390,7 +384,31 @@
         
     
       </div>
+      <div class="container">
+        <div class="row" style="margin-top:50px">
+          <div class="col-lg-5 col-md-12 align-self-center" data-aos="fade-left" >
+            <h1 style="	text-align:center;
+            color:red;
+            margin-bottom:50px;
+            text-transform:uppercase;">تمتع بعروضنا الاستثمارية </h1>
+            <h5 style="	text-align:center;
+            
+            margin-bottom:50px;
+            text-transform:uppercase;">حقق حلمك في امتلاك شقة فاخرة او محل تجاري في دبي ابتدأ من 70000 فقط كدفعة اولى
+            </h5>
+           
+
+          </div>
+          <div class="col-lg-7 col-md-12" data-aos="fade-right">
+            <div class="ratio ratio-16x9">
+              <iframe src="assets/img/Facebook.mp4"  title="YouTube video" allowfullscreen></iframe>
+            </div>
+          </div>
+          
+        </div>
+      </div>
     </section>
+    <jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="phone" [ngx_whatsapp_text]="title" style="display: block;position:static;z-index:300"> </jjva-ngx-whatsapp-button>
     <!-- <section>
       <carousel
       [images]="images"
@@ -401,6 +419,8 @@
       ></carousel> 
 
     </section> -->
+   
+    
 
     <section id="testimonial">
       <div class="container">
@@ -409,10 +429,10 @@
             <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3" data-aos="fade-up" style="	text-align:center;
             color:#C9A770;
             margin-bottom:50px;
-            text-transform:uppercase;">دبي قلب العالم</h5>
+            text-transform:uppercase;">مساكن و محلات تجارية على بحر</h5>
             <h4 data-aos="fade-up">شقتك بمجتمع سكني نابض بالحياة في موقع متميز في منطقة ميدان المرموقه في قلب ( مدينة سمو الشيخ محمد بن راشد).
 
-              محاط بالمساحات الخضراء والطبيعة  بقرب الشاطئ
+              محاط بالمساحات الخضراء والطبيعة   5 دقائق على الشاطئ
                
               
               
@@ -527,78 +547,7 @@
       </div>
     </section>
    
-    <section class="py-0 my-7" style="margin-top: 0px;">
-      <div class="bg-holder w-50 bg-left  d-none d-lg-block" style="background-image:url(assets/p/img/sharee.png);background-position:top;"></div>
-      <!--/.bg-holder-->
-      <div class="container">
-        <div class="row g-0">
-          <div class="col-lg-4 order-1 order-lg-0"> </div>
-          <div class="col-lg-8 bg-white">
-            <div class="carousel slide" id="carouselShare" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                  <div class="row h-100">
-                    <div class="pt-5 ps-sm-7" style="margin-bottom: 50px;">
-                      <h1 class="mb-2 text-1000" style="text-align: center;">احجز موعد استفسار </h1>
-                      <h2 class="mb-3 text-primary fs-3 fs-md-6" style="text-align: center;" >دبي</h2>
-                      <h4 class="fw-normal mb-0" style="font-weight: bold; font-family: 'Droid Arabic Kufi', serif;">شقتك بمجتمع سكني نابض بالحياة في موقع متميز في منطقة ميدان المرموقه في قلب ( مدينة سمو الشيخ محمد بن راشد).
-
-                        بجانب شاطئ </h4>
-                    </div>
-                    <div class="col-12"><img class="w-100" src="assets/img/IMG-20221107-WA0002.jpg" height="600" alt="..." />
-                     
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <div class="row h-100">
-                    <div class="pt-5 ps-sm-7" style="margin-bottom: 30px;">
-                      <h1 class="mb-2 text-1000" style="text-align: center;">شقتك بين يديك</h1>
-                      <h2 class="mb-3 text-primary fs-3 fs-md-6" style="text-align: center;">دبي</h2>
-                      <h4 class="fw-normal mb-0" style="font-weight: bold; font-family: 'Droid Arabic Kufi', serif;">وفر جميعها إطلالات رائعة. بالإضافة إلى ذلك ، سيضم المجتمع صالات رياضية وغرف ساونا وبخار وحمامات سباحة ومناطق خضراء وموقف سيارات 
-
-                        بالاضافة الى  مجموعة كبيرة من المقاهي والمطاعم والمحلات التجارية بالمكان.</h4>
-                    </div>
-                    <div class="col-12"><img class="w-100" src="assets/img/IMG-20221107-WA0016.jpg" height="600" alt="..." />
-                      
-                    </div>
-                  </div>
-                </div>
-               
-                <div class="carousel-item">
-                  <div class="row h-100">
-                    <div class="pt-5 ps-sm-7" style="margin-bottom: 30px;">
-                      <h1 class="mb-2 text-1000" style="text-align: center;">استثمر الآن</h1>
-                      <h2 class="mb-3 text-primary fs-3 fs-md-6" style="text-align: center;">دبي</h2>
-                      <h4 class="fw-normal mb-0" style="font-weight: bold; font-family: 'Droid Arabic Kufi', serif;">المشروع يخدم الباحثين عن الاستثمار فى دبي و شقق للبيع بدبي رخيصة و جودة عالية و عائد استثمارى عقارى مرتفع
-                        إذا ماذا تنتضضر حريفنا الكريم
-                        
-                      </h4>
-                    </div>
-                    <div class="col-12"><img class="w-100" src="assets/img/IMG-20221107-WA0017.jpg" height="600" alt="..." />
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row ps-sm-7 align-items-end">
-                <div class="col-4 col-sm-6 position-relative z-index-2">
-                  <ol class="carousel-indicators me-xxl-7 me-xl-4 me-lg-7">
-                    <li class="active" data-bs-target="#carouselShare" data-bs-slide-to="0"></li>
-                    <li data-bs-target="#carouselShare" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#carouselShare" data-bs-slide-to="2"></li>
-                    <li data-bs-target="#carouselShare" data-bs-slide-to="3"></li>
-                  </ol>
-                </div>
-                <div class="col-8 col-sm-6 position-relative z-index-2 text-end"><a class="btn btn-lg text-secondary" href="#" role="button">احجز الآن<svg class="bi bi-arrow-right ms-2" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                    </svg></a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+   
  <app-home></app-home>
   
    <!-- Footer -->
@@ -652,7 +601,9 @@
    
     
    
-    
+<section style=" background: url('assets/img/IMG-20221107-WA0015.jpg') center center;
+background-size: cover;background-attachment: fixed ;margin-bottom: 0px;">
+</section>
    
    
     <!-- ============================================-->

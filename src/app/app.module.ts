@@ -8,7 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from "@angular/common/http";
 import { LundingPageComponent } from './lunding-page/lunding-page.component';
 //import { AgmCoreModule } from '@agm/core';
-
+import { WavesModule, ModalModule, CarouselModule } from 'angular-bootstrap-md';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { NgxWhastappButtonModule } from "ngx-whatsapp-button";
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,10 @@ import { LundingPageComponent } from './lunding-page/lunding-page.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    
+    WavesModule, ModalModule, CarouselModule,
+    MDBBootstrapModule.forRoot(),
+    NgxWhastappButtonModule
+
     //AgmCoreModule.forRoot({apiKey:''})
     //AIzaSyA2Ti8hnmbGk3pb99BeekR3dch5hWFfrQA
   ],
